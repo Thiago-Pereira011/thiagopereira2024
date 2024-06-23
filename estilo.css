@@ -1,0 +1,54 @@
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body{	font-family: "Helvetica";
+		background: #B22222;
+	}
+	
+a{ text-decoration: none; 
+   color: #000;
+   text-transform: uppercase; 
+   }
+   
+a:hover{}
+
+#all{
+			width: 550px;
+			height: 80px;
+			line-height: 80px;
+			
+			background-color: #8B0000;
+			border: 1px dashed #7A0000;
+			margin: 0 auto;
+			  
+		}
+ul.menu li{ 
+			text-align: center;
+		}
+ul.menu li{
+			display: inline-block;
+			margin: 0px 5px;
+        }
+ul.menu li a{
+			background-color: #9C0303;
+			border-radius: 6px 6px;
+			color: #FFFFFF;
+		}
+ul.menu li:hover{
+			background-color: #580502;
+			
+		}
+		
+textarea {
+    resize: none;
+}
+		
+		
+
+		
+		
+			
+	

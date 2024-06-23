@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="pt">
+	<head>
+		<title>Contato</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="widht=device-widht, initial-scale="1">
+		<meta name="discription" content="Contato">
+		<meta name="keywords" content="Canadá, Contato">
+		<meta name="author" content="Thiago Pereira Bispo da Silva">
+		<link rel="icon" type="image/png" href="img/band.png">
+		<link rel= "stylesheet" type="text/css" href="estilo.css">
+		<script language="Javascript" type="text/javascript">
+			function validar() {
+				var nome = form1.nome.value; 
+				var email = form1.email.value; 
+				var nota = form1.nota.value; 
+				
+				
+				if(nome ==""){
+					alert("Preencha o campo com seu nome");
+					form1.nome.focus();
+					return false;
+				}
+				
+				if(nome.length < 5){
+					alert("Preencha o campo com seu nome completo");
+					form1.nome.focus();
+					return false;
+				}
+				
+				if(email ==""){
+					alert("Preencha o campo com seu email");
+					form1.email.focus();
+					return false;
+				}
+				
+				if(nota ==""){
+					alert("Preencha o campo com sua nota");
+					form1.nota.focus();
+					return false;
+				}
+				}
+		</script>
+	</head>
+	<body>
+		<div id="all">
+			<ul class="menu">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="sobre.html">Sobre</a></li>
+				<li><a href="geografia.html">Geografia</a></li>
+				<li><a href="curiosidades.html">Curiosidades</a></li>
+				<li><a href="galeria.html">Galeria</a></li>
+				<li><a href="contato.html">Contato</a></li>
+			</ul>
+		</div>
+		<br><br><br><br>
+		<center>
+		 <form name="form1" action="conf.html" method="post">
+			Nome: <input name="nome" type="text"><br><br>
+			Email: <input name="email" type="text"><br><br>
+			Deixe sua Nota!
+			<select name="nota">
+				<option> 
+				<option> 0
+				<option> 1
+				<option> 2
+				<option> 3
+				<option> 4
+				<option> 5
+				<option> 6
+				<option> 7
+				<option> 8
+				<option> 9
+				<option> 10
+			</select><br><br>
+			<textarea cols="50" rows="15" name="coment"></textarea><br><br>
+			<input type="submit" onclick="return validar()">
+			<input type="reset" name="limpa" value="Limpar">
+		</form>
+		</center>
+		<br><hr><br><h5 align="center"> Thiago Pereira <b>2024</b> - &copyTodos os direitos reservados</h5><br>
+		<center>Trabalho acadêmico sem fins lucrativos</center>
+	</body>
+</html>
